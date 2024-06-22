@@ -1,35 +1,36 @@
 # MongoDB
 
-MongoDB es una base de datos NoSQL orientada a documentos que permite almacenar y consultar grandes volúmenes de datos de manera rápida y eficiente. A diferencia de las bases de datos SQL tradicionales, que organizan los datos en tablas y requieren esquemas predefinidos, MongoDB utiliza un modelo flexible de documentos en formato JSON (BSON - Binary JSON), lo que permite una mayor flexibilidad y escalabilidad.
+MongoDB is a NoSQL document-oriented database that allows for the storage and querying of large volumes of data quickly and efficiently. Unlike traditional SQL databases, which organize data in tables and require predefined schemas, MongoDB uses a flexible document model in JSON format (BSON - Binary JSON), allowing for greater flexibility and scalability.
 
-## Tipos de bases de datos
+## Types of Databases
+
 ### SQL
 
-- **Relacional**
-  - La información se relacióna entre sí mediante el uso de índices, se guarda de manera separada.
-- **Tablas y esquematización** 
-  - Siempre cuenta con estructuras fijas y no hay forma de cambiarlas de forma sencilla, la estructura se planifica desde el principio.
+- **Relational**
+  - Information is related to each other through the use of indices and is stored separately.
+- **Tables and Schematization** 
+  - Always has fixed structures and cannot be easily changed; the structure is planned from the beginning.
 
-### NOSQL
+### NoSQL
 
-- **No relacional**
-  - La información no tiene por qué tener vinculo alguno.
+- **Non-relational**
+  - Information does not need to have any relationship.
 - **JavaScript**
-  - El lenguaje utilizado no es SQL, es JavaScript, lo cual es útil si combinas el Front con el Backend de forma de todo use el mismo lenguaje de programación.
-- **Orientadas a documentos como JSON, BSON, BinarySON**
-  - No tenemos tablas, tenemos colecciones de documentos y estos documentos son objetos. En MongoDB directamente pasa de ser JSON a Binario con BSON para rapidez.
-- **Sencillez, velocidad, esquema libre, extremadamente escalable**
-  - El tiempo de consulta se mide en milesimas de segundo, es rápido y ligero.
+  - The language used is not SQL, it is JavaScript, which is useful if you combine Frontend with Backend, making everything use the same programming language.
+- **Document-oriented like JSON, BSON, BinarySON**
+  - We don't have tables, we have collections of documents, and these documents are objects. In MongoDB, it directly goes from JSON to Binary with BSON for speed.
+- **Simplicity, speed, schema-free, extremely scalable**
+  - The query time is measured in milliseconds; it is fast and lightweight.
 
-### Comparativa visual:
+### Visual Comparison:
 
-| Concepto SQL | Concepto NoSQL      |
-| ------------ | ------------------- |
-| Tabla        | Colección           |
-| Esquema      | No hay esquema fijo |
-| Filas        | Documentos          |
-| Columnas     | Campos              |
-| Registros    | Documentos          |
+| SQL Concept | NoSQL Concept       |
+| ----------- | ------------------- |
+| Table       | Collection          |
+| Schema      | No fixed schema     |
+| Rows        | Documents           |
+| Columns     | Fields              |
+| Records     | Documents           |
 
 ![](https://media.cleanshot.cloud/media/38290/NvWyxia2vYtv3cXgLpEdBGIUtCi4EE39Bxdpng7l.jpeg?Expires=1719093293&Signature=K91iKpnOuALhrhB5xuDUW4qKLczD8AQ5TqZ2156tK8gObnbEjr9b0P5UeFA~yZl1oSR~gHYbF3LZZJQ15Ka~6eWItyTuMxz1F7yZ4--l9q5riwqNAQq83WnLAfBZDcnM0jTdeksJFGOGz5qEHaY4yats3YHdnEXistktIDUUiz693XAUEZAiF~oTRVWyuLokNhSWHfeTRfnferUBp~jncdyzSYZCz0Rnu6fCu0X3vtU~CrXaplcGXWEvoL41csBvOOacCDgrXqubdS2-0bJEkS1S9L6DlMbziQwrUauox1SJbvUihFkL431ko7y0R9A86rftgpBLw7m9F3y4MY3jKQ__&Key-Pair-Id=K269JMAT9ZF4GZ)
 
@@ -37,7 +38,7 @@ MongoDB es una base de datos NoSQL orientada a documentos que permite almacenar 
 
 ![](https://media.cleanshot.cloud/media/38290/H1CDWApeGgXdnSgQVUY0GpPRiBTntZWXYTvrGsS3.jpeg?Expires=1719093357&Signature=XF~FoWlxfn~BAnnmXjI2u9~cjjelmxyQBw8ZRN3Hs9tl2LTZXR5uYuiSFz8AjLYnNVpdbGVhJSipCiOtCj99btRfqorD39IFRtPA76ce17URRTfKmkSIiEonx-fOE4dTn6wvIDzrL8qk6ci0k7X6j4Q9jGyC5aCYK8pn3OZod6tQ0mg-Sf~jijjsQdaIxS5aZeKLAVH3-MJHLs4yvQZSpdfsm8R80b2RSfruSHMt4b634HMeUB5wxi60qqTHUAqYSr5NkXs9Z8zg9ZszwyePBmUzQFUGM08y7vFpC5vtDoXwjNCyzE~jGo0r3Azs62g9MqjuMBdNGgx5W64cdZMh9A__&Key-Pair-Id=K269JMAT9ZF4GZ)
 
-Ejemplo de documento en MongoDB.
+Example of a document in MongoDB.
 
 ```
 {
@@ -51,7 +52,7 @@ Ejemplo de documento en MongoDB.
 
 ## MongoDB Compass
 
-Es la GUI oficial para MongoDB. Using MongoDB Compass allows us to quickly analyze and understand the contents of our data collections and perform queries, within other cool features, such as a graphical view of our MongoDB schema and data.
+Is the oficial GUI for MongoDB. Using MongoDB Compass allows us to quickly analyze and understand the contents of our data collections and perform queries, within other cool features, such as a graphical view of our MongoDB schema and data.
 
 ### Data types in MongoDB
 
@@ -125,11 +126,18 @@ Construct complex queries by combining various operators to filter and retrieve 
 **Summary:**
 This lesson covered essential CRUD operations using MongoDB Compass, importing data, and constructing advanced queries. You learned how to use logical, comparison, array, and element operators to refine your queries and optimize your database interactions.
 
-**Resources:**
-- [MongoDB CRUD Documentation](https://docs.mongodb.com/manual/crud/)
-- [MongoDB Query Selectors](https://docs.mongodb.com/manual/reference/operator/query/)
-- [MongoDB Compass Querying](https://docs.mongodb.com/compass/master/query/)
-- [Query Operators for Arrays](https://docs.mongodb.com/manual/reference/operator/query-array/)
-- [Query Operators for Elements](https://docs.mongodb.com/manual/reference/operator/query-element/)
-- [Query Operators for Comparison](https://docs.mongodb.com/manual/reference/operator/query-comparison/)
+## Resources
+<details>
+  <summary>Click to expand the resources</summary>
+
+  - [Mongo CRUD Documentation](https://docs.mongodb.com/manual/crud/)
+  - [Query selectors in MongoDB](https://docs.mongodb.com/manual/reference/operator/query/)
+  - [Reference Operators](https://docs.mongodb.com/manual/reference/operator/)
+  - [Mongo Compass Querying](https://docs.mongodb.com/compass/master/query/)
+  - [Query Operators](https://docs.mongodb.com/manual/reference/operator/query/)
+  - [Query Operators for Arrays](https://docs.mongodb.com/manual/reference/operator/query-array/)
+  - [Query Operators for Elements](https://docs.mongodb.com/manual/reference/operator/query-element/)
+  - [Query Operators for Comparison](https://docs.mongodb.com/manual/reference/operator/query-comparison/)
+
+</details>
 
