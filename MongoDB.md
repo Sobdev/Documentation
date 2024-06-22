@@ -1,6 +1,6 @@
-Tipos de bases de datos
+## Tipos de bases de datos
 
-SQL
+# SQL
 - Relacionales
 Son relacionales porque la información se relaciona entre sí mediante el uso de índices, se guarda de manera separada.
 - Tablas
@@ -9,7 +9,7 @@ Siempre son fijos y no hay forma de cambiarlos.
 ￼
 ￼
 
-NoSQL
+# NoSQL
 - No relacionales
 No tiene por qué tener relación entre sí.
 - JavaScript.
