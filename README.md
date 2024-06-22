@@ -9,5 +9,3 @@ In the fast-paced world of technology, standing still is not an option. New prog
 Continuous learning is not just about keeping up with the latest trends; it's about deepening our understanding of the fundamentals that underpin our craft. It involves revisiting core concepts, exploring new paradigms, and challenging ourselves to think differently. By committing to lifelong learning, we open ourselves to endless possibilities and the chance to create truly impactful software.
 
 Happy coding!
-
-**Adrian Sobota**
