@@ -1,63 +1,51 @@
+# MongoDB
+
+MongoDB es una base de datos NoSQL orientada a documentos que permite almacenar y consultar grandes volúmenes de datos de manera rápida y eficiente. A diferencia de las bases de datos SQL tradicionales, que organizan los datos en tablas y requieren esquemas predefinidos, MongoDB utiliza un modelo flexible de documentos en formato JSON (BSON - Binary JSON), lo que permite una mayor flexibilidad y escalabilidad.
+
 ## Tipos de bases de datos
+### SQL
 
-# SQL
-- Relacionales
-Son relacionales porque la información se relaciona entre sí mediante el uso de índices, se guarda de manera separada.
-- Tablas
-- Esquemas
-Siempre son fijos y no hay forma de cambiarlos.
-￼
-￼
+- **Relacional**
+  - La información se relacióna entre sí mediante el uso de índices, se guarda de manera separada.
+- **Tablas y esquematización** 
+  - Siempre cuenta con estructuras fijas y no hay forma de cambiarlas de forma sencilla, la estructura se planifica desde el principio.
 
-# NoSQL
-- No relacionales
-No tiene por qué tener relación entre sí.
-- JavaScript.
-El lenguaje es JS
-- Orientadas a documentos como JSON, BSON BinarySON
-No tenemos tablas, tenemos colecciones de documentos y estos documentos son objetos. En MongoDB directamente pasa de ser JSON a Binario con BSON para rapidez.
-- Sencillez, velocidad. La velocidad de consulta es, de verdad, abismalmente más rápida.
-- Esquema libre.
+### NOSQL
 
-￼
-Usuarios:
+- **No relacional**
+  - La información no tiene por qué tener vinculo alguno.
+- **JavaScript**
+  - El lenguaje utilizado no es SQL, es JavaScript, lo cual es útil si combinas el Front con el Backend de forma de todo use el mismo lenguaje de programación.
+- **Orientadas a documentos como JSON, BSON, BinarySON**
+  - No tenemos tablas, tenemos colecciones de documentos y estos documentos son objetos. En MongoDB directamente pasa de ser JSON a Binario con BSON para rapidez.
+- **Sencillez, velocidad, esquema libre, extremadamente escalable**
+  - El tiempo de consulta se mide en milesimas de segundo, es rápido y ligero.
+
+### Comparativa visual:
+
+| Concepto SQL | Concepto NoSQL      |
+| ------------ | ------------------- |
+| Tabla        | Colección           |
+| Esquema      | No hay esquema fijo |
+| Filas        | Documentos          |
+| Columnas     | Campos              |
+| Registros    | Documentos          |
+
+![](https://media.cleanshot.cloud/media/38290/NvWyxia2vYtv3cXgLpEdBGIUtCi4EE39Bxdpng7l.jpeg?Expires=1719093293&Signature=K91iKpnOuALhrhB5xuDUW4qKLczD8AQ5TqZ2156tK8gObnbEjr9b0P5UeFA~yZl1oSR~gHYbF3LZZJQ15Ka~6eWItyTuMxz1F7yZ4--l9q5riwqNAQq83WnLAfBZDcnM0jTdeksJFGOGz5qEHaY4yats3YHdnEXistktIDUUiz693XAUEZAiF~oTRVWyuLokNhSWHfeTRfnferUBp~jncdyzSYZCz0Rnu6fCu0X3vtU~CrXaplcGXWEvoL41csBvOOacCDgrXqubdS2-0bJEkS1S9L6DlMbziQwrUauox1SJbvUihFkL431ko7y0R9A86rftgpBLw7m9F3y4MY3jKQ__&Key-Pair-Id=K269JMAT9ZF4GZ)
+
+![](https://media.cleanshot.cloud/media/38290/xjdIozZFn8v0H8KaAoZCWFlTqshzz76oETqyvsma.jpeg?Expires=1719093325&Signature=j98LvO9myFlKnRjEEoz65E3Av9fcrhFyRvEYmfpwts5N9hCCHPdk0U9CnVhzepQZ9ZG7fK8FzR~sunlRVD7ECYFYsmRWBkpvtNQ0fTQaREnWXhqleaLFGAzBcTBrfBrZ02us5oOtT61YTFAeJnVdAx2I7JyeMaNduX2DSjSbaTeDgTW9sN7TfMsSbi6TmEm7fmeU5ODjYCiHe~VAKECMGg952-ukTh2cDScUqsdfFY28huTFCDWfdzLICnQQLxVQhKLqxOn7rWOo~e~yj-3eu4oOrfJJIwSgIkuAMoYcCo1jpuRRVXwVRWbPu~tgwYoEroPdgMSIJSRePUvdLDJlrg__&Key-Pair-Id=K269JMAT9ZF4GZ)
+
+![](https://media.cleanshot.cloud/media/38290/H1CDWApeGgXdnSgQVUY0GpPRiBTntZWXYTvrGsS3.jpeg?Expires=1719093357&Signature=XF~FoWlxfn~BAnnmXjI2u9~cjjelmxyQBw8ZRN3Hs9tl2LTZXR5uYuiSFz8AjLYnNVpdbGVhJSipCiOtCj99btRfqorD39IFRtPA76ce17URRTfKmkSIiEonx-fOE4dTn6wvIDzrL8qk6ci0k7X6j4Q9jGyC5aCYK8pn3OZod6tQ0mg-Sf~jijjsQdaIxS5aZeKLAVH3-MJHLs4yvQZSpdfsm8R80b2RSfruSHMt4b634HMeUB5wxi60qqTHUAqYSr5NkXs9Z8zg9ZszwyePBmUzQFUGM08y7vFpC5vtDoXwjNCyzE~jGo0r3Azs62g9MqjuMBdNGgx5W64cdZMh9A__&Key-Pair-Id=K269JMAT9ZF4GZ)
+
+Ejemplo de documento en MongoDB.
+
+```
 {
-	nombre: ‘Adrian’,
-	apellido: ’Sobota’,
-	email: ‘emal@email.com’
+  "nombre": "Adrian",
+  "apellido": "Sobota",
+  "email": "email@example.com",
+  "edad": 28,
+  "intereses": ["programación", "diseño gráfico", "marketing"]
 }
+```
 
-￼
-
-1. Tablas -> Colecciones:
-    * SQL: Las tablas en bases de datos relacionales organizan los datos en filas y columnas.
-    * NoSQL: Las colecciones en MongoDB agrupan documentos similares, pero no tienen un esquema rígido.
-2. Esquema -> Sin esquema fijo:
-    * SQL: Cada tabla tiene un esquema fijo, que define las columnas y tipos de datos de antemano.
-    * NoSQL: Las colecciones pueden contener documentos con diferentes estructuras y tipos de datos.
-3. Tablas -> Colecciones (Documentos):
-    * SQL: Tablas se utilizan para organizar datos en un formato estructurado.
-    * NoSQL: Las colecciones contienen documentos en un formato flexible (como JSON o BSON).
-4. Filas -> Documentos:
-    * SQL: Las filas representan un registro individual en una tabla.
-    * NoSQL: Los documentos representan una unidad de datos similar a una fila, pero pueden tener estructuras anidadas y diferentes tipos de datos.
-5. Columnas -> Campos:
-    * SQL: Las columnas definen los tipos de datos específicos y los nombres para cada valor en una fila.
-    * NoSQL: Los campos en un documento almacenan datos y pueden variar de un documento a otro dentro de la misma colección.
-6. Registros -> Documentos:
-    * SQL: Un registro es una fila completa en una tabla.
-    * NoSQL: Un documento es una estructura de datos completa dentro de una colección, similar a un registro en SQL pero más flexible.
-    * 
-Comparativa visual:
-Concepto SQL	Concepto NoSQL
-Tabla	Colección
-Esquema	No hay esquema fijo
-Filas	Documentos
-Columnas	Campos
-Registros	Documentos
-
-* Tablas -> Colecciones: Las tablas en SQL son estrictas en términos de esquema y estructura, mientras que las colecciones en NoSQL permiten una estructura más libre, adaptándose a las necesidades cambiantes de la aplicación.
-* Esquema -> Sin esquema fijo: En SQL, el esquema es necesario para definir la estructura de los datos antes de su almacenamiento, asegurando consistencia y restricciones de integridad. En NoSQL, la ausencia de un esquema fijo permite una flexibilidad considerable en la forma en que se almacenan los datos, permitiendo que diferentes documentos en una colección tengan diferentes campos y tipos de datos.
-* Filas -> Documentos: Las filas en SQL contienen datos estructurados en columnas predefinidas, mientras que los documentos en NoSQL pueden tener estructuras anidadas, arrays y tipos de datos variados.
-* Columnas -> Campos: Las columnas en SQL son definidas por el esquema de la tabla y son consistentes para todas las filas. Los campos en NoSQL pueden variar entre documentos dentro de la misma colección, permitiendo una gran flexibilidad en la representación de datos.
-* Registros -> Documentos: Los registros en SQL son equivalentes a las filas y contienen datos coherentes con el esquema de la tabla. Los documentos en NoSQL son unidades de datos independientes que pueden incluir datos complejos y anidados.
