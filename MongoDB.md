@@ -138,6 +138,99 @@ This lesson covered essential CRUD operations using MongoDB Compass, importing d
   - [Query Operators for Arrays](https://docs.mongodb.com/manual/reference/operator/query-array/)
   - [Query Operators for Elements](https://docs.mongodb.com/manual/reference/operator/query-element/)
   - [Query Operators for Comparison](https://docs.mongodb.com/manual/reference/operator/query-comparison/)
-
 </details>
 
+# MongoDB Data Modeling
+
+## Introduction
+One of MongoDB's strengths is its flexible schema, allowing for documents with different structures within the same collection. The standard approach is to group documents with similar structures in the same collection. When designing a database model, it's crucial to consider the data types and how documents and collections will connect.
+
+## Glossary
+- **Data Model**: Representation of data elements and their relationships.
+- **Normalization**: Organizing data to eliminate duplication, reduce errors, eliminate redundancy, and simplify querying.
+- **Normalized Database**: Structured to eliminate data duplication and redundancy, simplifying queries.
+- **Schema**: Defines the structure of a database, including fields, data types, relationships, and constraints.
+
+## Data Model
+A data model defines how collections and documents are organized and related. Key considerations include document structure and relationships between collections. There are two main approaches:
+
+- **Referencing Documents**: Storing references between documents using identifiers.
+- **Embedding Documents**: Storing documents within other documents as nested data.
+
+## Referencing Documents - Relationships
+Database relationships are logical links between collections/tables. In MongoDB, relationships use unique document IDs (_id). Relationships can be established using references, similar to foreign keys in SQL. For example:
+
+**Users Collection**:
+```json
+{
+   "_id": ObjectId('593e7a1a4299c306d656200f'),
+   "username": "123xyz"
+}
+```
+Contacts Collection:
+```
+json
+{
+    "_id": ObjectId('59f30dd86f0b06a96e31bbb9'),
+    "user_id": ObjectId('593e7a1a4299c306d656200f'),
+    "phone": "123-456-7890",
+    "email": "xyz@example.com"
+}
+```
+Accesses Collection:
+```
+json
+{
+    "_id": ObjectId('59e1a1c13f0b12a96e31aaa9'),
+    "user_id": ObjectId('593e7a1a4299c306d656200f'),
+    "level": 5,
+    "group": "dev"
+}
+```
+
+Embedding Documents
+Documents can also be related by embedding them. For example:
+
+```
+json
+{
+    "_id": ObjectId('593e7a1a4299c306d656200f'),
+    "username": "123xyz",
+    "contact": {
+        "phone": "123-456-7890",
+        "email": "xyz@example.com"
+    },
+    "access": {
+        "level": 5,
+        "group": "dev"
+    }
+}
+```
+
+Multiple Sub-documents
+To embed multiple documents, use arrays:
+
+```
+json
+{
+    "_id": ObjectId('593e7a1a4299c306d656200f'),
+    "username": "123xyz",
+    "addresses": [
+        {
+            "street": "123 Fake Street",
+            "city": "Faketon",
+            "state": "MA",
+            "zip": "12345"
+        },
+        {
+            "street": "1 Some Other Street",
+            "city": "Boston",
+            "state": "MA",
+            "zip": "12345"
+        }
+    ]
+}
+```
+
+Model Relationships Between Documents
+It's crucial to identify primary use cases and define the necessary information. Properly organizing relationships ensures a tidy database and efficient queries. 
