@@ -234,3 +234,25 @@ json
 
 Model Relationships Between Documents
 It's crucial to identify primary use cases and define the necessary information. Properly organizing relationships ensures a tidy database and efficient queries. 
+
+# Resumen de Aprendizajes en Backend, Node.js, Mongoose y Express
+
+## Introducción
+
+A lo largo de mi formación en el bootcamp de IronHack, he adquirido conocimientos fundamentales y avanzados sobre el desarrollo backend utilizando tecnologías como Node.js, Express y Mongoose. En este documento, se presenta un resumen detallado de estos conceptos, los cuales son esenciales para la creación de aplicaciones web modernas y escalables.
+
+## Node.js
+
+### ¿Qué es Node.js?
+Node.js es un entorno de ejecución de JavaScript que permite a los desarrolladores ejecutar código JavaScript en el servidor. Está construido sobre el motor V8 de Google Chrome y es conocido por su arquitectura orientada a eventos y su modelo de E/S no bloqueante, lo que lo hace ideal para aplicaciones de tiempo real y sistemas altamente escalables.
+
+### Características Principales
+- **E/S No Bloqueante**: Permite manejar múltiples conexiones simultáneamente sin bloquear el hilo principal de ejecución.
+- **Event-Driven**: Utiliza un bucle de eventos para gestionar las operaciones asíncronas.
+- **Single-Threaded**: Aunque es de un solo hilo, Node.js puede manejar operaciones de E/S concurrentes utilizando su modelo de eventos.
+- **NPM (Node Package Manager)**: Un gestor de paquetes que permite a los desarrolladores instalar, compartir y gestionar dependencias de sus proyectos.
+
+### Instalación
+Para instalar Node.js y NPM:
+```bash
+brew install node
