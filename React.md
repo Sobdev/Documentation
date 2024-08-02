@@ -55,7 +55,8 @@ The `src` folder is where the core of your React application resides. The main e
 
 Here's a sample `index.js` file, which is the entry point for your React application:
 
-```import React from 'react';
+```javascript
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
