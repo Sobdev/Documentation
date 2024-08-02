@@ -1,19 +1,14 @@
 # ⚛️ REACT LATE SUMMER REVIEW ⚛️
+<img src="https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png">
 
 ## FIRST STEPS
 
   ### CREATE A PROJECT
-
   #### Using create-react-app  
-  [https://create-react-app.dev/](https://create-react-app.dev/)
-
+  [create-react-app Documentation](https://create-react-app.dev/)
   ```bash
   mkdir "project-name"
   npx create-react-app "project-name"
-
-  npx create-react-app my-app
-  cd my-app
-  npm start
   ```
   For example:
   ```bash
@@ -31,7 +26,7 @@
   ```bash
   npm run dev
   ```
-  This command launches a development server and opens your React application in your default web browser, typically at http://localhost:3000/.
+  [Vite Documentation](https://vitejs.dev/)
 
 ### BASIC CONCEPTS OF PROJECT STRUCTURE
 A typical React project created with create-react-app comes with a certain directory structure. Here is a breakdown of the important folders and files:
@@ -44,11 +39,11 @@ The `public` directory is where static files reside. The most crucial file here 
 
 Here's a bit more detail about some files within the public directory:
 
-*index.html*: This file is the template HTML file that your React components will be injected into. The id="root" div is where the React application mounts, and it is configured in the src/index.js file.
+- **index.html**: This file is the template HTML file that your React components will be injected into. The `id="root"` div is where the React application mounts, and it is configured in the `src/index.js` file.
 
-*manifest.json*: This file is primarily used for Progressive Web Apps (PWAs). It contains metadata that allows your app to be installed on a user's device like a native app, providing offline capabilities, among other features. [https://en.wikipedia.org/wiki/Progressive_web_app](PWAs Documentation)
+- **manifest.json**: This file is primarily used for Progressive Web Apps (PWAs). It contains metadata that allows your app to be installed on a user's device like a native app, providing offline capabilities, among other features. [PWAs Documentation](https://en.wikipedia.org/wiki/Progressive_web_app).
 
-Other files: Files like favicon.ico, robots.txt, and images like logo192.png and logo512.png are also stored in the public directory. These are typically used for setting up branding (e.g., the favicon) and controlling web crawler behavior (e.g., robots.txt).
+- **Other files**: Files like favicon.ico, robots.txt, and images like logo192.png and logo512.png are also stored in the public directory. These are typically used for setting up branding (e.g., the favicon) and controlling web crawler behavior (e.g., robots.txt).
 
 #### src Folder (Functional Component)
 The `src` folder is where the core of your React application resides. The main entry point for your application is `src/index.js`, and the main component that gets rendered is typically `src/App.js`.
