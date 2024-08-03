@@ -1,5 +1,7 @@
 # ⚛️ REACT LATE SUMMER REVIEW ⚛️
-<img src="https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png">
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg">
+
+[ReactJS Documentation](https://react.dev/)
 
 ## FIRST STEPS
 
@@ -112,3 +114,8 @@ function MyComponent(props) {
 export default MyComponent;
 ```
 
+## Sources 📖
+- [ReactJS Documentation](https://react.dev/)
+- [create-react-app Documentation](https://create-react-app.dev/)
+- [Vite Documentation](https://vitejs.dev/)
+- [PWAs Documentation](https://en.wikipedia.org/wiki/Progressive_web_app)
