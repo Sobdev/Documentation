@@ -5,30 +5,30 @@
 
 ## FIRST STEPS
 
-  ### CREATE A PROJECT
-  #### Using create-react-app  
-  [create-react-app Documentation](https://create-react-app.dev/)
-  ```bash
-  mkdir "project-name"
-  npx create-react-app "project-name"
-  ```
-  For example:
-  ```bash
-  npx create-react-app first-project
-  ```
-  To start the projet just run:
-  ```bash
-  npm start
-  ```
-  This command launches a development server and opens your React application in your default web browser, typically at http://localhost:3000/.
+### CREATE A PROJECT
+#### Using create-react-app  
+[create-react-app Documentation](https://create-react-app.dev/)
+```bash
+mkdir "project-name"
+npx create-react-app "project-name"
+```
+For example:
+```bash
+npx create-react-app first-project
+```
+To start the projet just run:
+```bash
+npm start
+```
+This command launches a development server and opens your React application in your default web browser, typically at http://localhost:3000/.
 
-  To stop the server, simply press *Ctrl + C* in the terminal where the server is running.
+To stop the server, simply press *Ctrl + C* in the terminal where the server is running.
 
-  In case you are using Vite, the command to start the server is:
-  ```bash
-  npm run dev
-  ```
-  [Vite Documentation](https://vitejs.dev/)
+In case you are using Vite, the command to start the server is:
+```bash
+npm run dev
+```
+[Vite Documentation](https://vitejs.dev/)
 
 ### BASIC CONCEPTS OF PROJECT STRUCTURE
 A typical React project created with create-react-app comes with a certain directory structure. Here is a breakdown of the important folders and files:
