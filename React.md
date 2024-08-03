@@ -1,7 +1,5 @@
 # ⚛️ REACT LATE SUMMER REVIEW ⚛️
-<div style="text-align: center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" style="width: 350px; height: 350px;">
-</div>
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React logo" style="display: block; margin: 0 auto; width: 350px; height: 350px; text-align: center">
 
 [ReactJS Documentation](https://react.dev/)
 
