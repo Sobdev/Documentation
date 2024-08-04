@@ -1,5 +1,5 @@
 # ⚛️ REACT LATE SUMMER REVIEW ⚛️
-<img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React logo" style="display: block; margin: 0 auto; width: 350px; height: 350px; text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React logo" style="width: 350px; height: 350px">
 
 [ReactJS Documentation](https://react.dev/)
 
@@ -73,13 +73,32 @@ reportWebVitals();
 ```
   - **App.js**: This is the main component of your application. It is rendered by index.js and typically contains other components that make up your       application.
 
-  - **reportWebVitals.js:** This file is used for measuring the performance of your React app. It's optional and can be configured to log results or send them to an analytics endpoint.
 
   - **index.css**: This file contains global CSS styles for your application. It is imported into index.js.
+  
+  - **reportWebVitals.js:** This file is used for measuring the performance of your React app. It's optional and can be configured to log results or send them to an analytics endpoint.
+  
+  ##### Personal Note ⚠️
+  - **reportWebVitals.js,** **setupTest.js**, **App.test.js** and the line 5 `index.js`: `import reportWebVitals from  './reportWebVitals'` can be deleted in most cases.
+    - From a learning POV you can delete those files and adapt the code to look liks this as a good fresh start point: 
+```javascript
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
 
-### ⚛️What is a Component?⚛️
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+```
 
-A component is a fundamental part of a React application. It can be a class or a function and represents a piece of the user interface, such as a button, a header, or even an entire page section.
+
+### ⚛️ COMPONENTS ⚛️
+
+A component is a _fundamental_ part of a React application. It can be a class or a function and represents a piece of the user interface, such as a button, a header, or even an entire page section.
  - **Reusability**: The main feature of React components is their reusability. Whether it’s a header, a button, or a navigation bar, components can be used multiple times across your project, which helps in maintaining consistency and reducing code duplication.
 
 #### Component Structure
@@ -113,6 +132,57 @@ function MyComponent(props) {
 
 export default MyComponent;
 ```
+
+#### How to Create a Component in React
+##### Basic Method
+1. **Create a New File:** Start by creating a new file for your component. The file name should match the component name and use CamelCase notation. For example, `MyComponent.js`.
+
+2. **Import Dependencies:** In this file, import the necessary dependencies. At a minimum, you'll need to import React: 
+```javascript 
+import React from "react";
+```
+3. **Define the Component:**
+   Declare a functional component using the const keyword. The component's name should match the file name:
+```javascript
+const MyComponent = () => {
+return <p>This is my first component!</p>;
+};
+```
+   **Rendering Multiple Elements:** If your component needs to return multiple elements, you must wrap them in a parent element, such as a `<div></div>` or a React Fragment `<> </>`. This is necessary because React components can only return a single element.
+```javascript
+const MyComponent = () => {
+  return (
+    <div>
+      <h1>Hello, World!</h1>
+      <p>This is my first component!</p>
+    </div>
+  );
+};
+```
+
+   **Choosing the Wrapper:** In most cases, using a `<div></div>` is preferable because it creates a new level of scope. This provides better control over styling and allows the component to function independently, especially when reused multiple times in different parts of your application.
+4. **Export the Component:** To make your component available for use in other parts of your application, you need to export it. This is done with the export default syntax:
+```javascript
+export default MyComponent;
+```
+5. **Import the Component:** Now that your component is defined and exported, you can import it into another file where you want to use it, such as App.js:
+```javascript
+import MyComponent from "./MyComponent";
+```
+6. **Render the Component:** Finally, include your component in the JSX of the file where it was imported. You do this by using the component as a self-closing tag:
+```javascript
+function App() {
+  return (
+    <div>
+      <MyComponent />
+    </div>
+  );
+}
+```
+
+
+
+
 
 ## Sources 📖
 - [ReactJS Documentation](https://react.dev/)
