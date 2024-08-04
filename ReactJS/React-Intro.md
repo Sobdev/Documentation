@@ -190,7 +190,6 @@ export const MyAdvancedComponent = () => {
   )
 }
 ```
-2. Type the Component tag directly and the import will be autocompleted for you using the intelligence of Visual Studio Code.
 
 ## Sources 📖
 - [ReactJS Documentation](https://react.dev/)
