@@ -6,7 +6,6 @@
 ## Index
 1. [First Steps](#first-steps)
 2. [Basic Concepts of Project Structure](#basic-concepts-of-project-structure)
-3. [Components](#components)
 
 ## FIRST STEPS
 
