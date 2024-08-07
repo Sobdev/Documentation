@@ -4,8 +4,11 @@
 [ReactJS Documentation](https://react.dev/)
 
 ## Index
-1. [First Steps](#first-steps)
-2. [Basic Concepts of Project Structure](#basic-concepts-of-project-structure)
+1. [How to create a new project](#create-a-project)
+2. [Project Structure](#basic-concepts-of-project-structure)
+3. [Components](#component-structure)
+4. [Create a component shortcut](#avanced-method)
+5. [Sources](#sources)
 
 ## FIRST STEPS
 
