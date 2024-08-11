@@ -8,7 +8,6 @@
 2. [Project Structure](#basic-concepts-of-project-structure)
 3. [Components](#component-structure)
 4. [Create a component shortcut](#avanced-method)
-5. [Sources](#sources)
 
 ## FIRST STEPS
 
