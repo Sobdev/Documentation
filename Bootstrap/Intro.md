@@ -1,4 +1,4 @@
-### Understanding Bootstrap Class Abbreviations
+### Class Abbreviations
 
 In Bootstrap, classes abbreviated in `className=""` are used to quickly apply predefined styles to HTML elements. These classes follow a specific naming convention that makes it easy to customize margins, padding, font sizes, colors, and more without writing custom CSS. Below, I'll explain some of the most common abbreviations and how to use them.
 
