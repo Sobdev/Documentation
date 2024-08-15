@@ -1,6 +1,6 @@
 ### Types
 
-![TypeScript Logo](https://www.typescriptlang.org/assets/images/icons/favicon-32x32.png)
+![TypeScript Logo](https://media.cleanshot.cloud/media/38290/ufqvTW7ISswoMrpS97qv6QWV7Jrgbp0d82w7KMKB.jpeg?Expires=1723758207&Signature=QobrVOL40AhYICaRY4PUhTsK70QSOGSOma0QnmVwIlUKSNFS~DzKtdCx1pMgn23satMC9Bu7cQ8XeBcG1HxjQ0OATN9a-N0K0UmhXCgkd3L9DXXRRLb0OexWcm3Vm4~YBnc-Dl2mHa6zqAOIYI4X0lr8dZEGe6bQxG~yHDlqr1QwcOKPdeCyAd1hlOXDBAYKDF-8OVu7qi5R4wgLvx~WtMRjN9cRa6O~KxPZA4Ei8T-39mDNm4yosLPSUQOV3ouJRq3S24WeCCGVr1Cu9lusJCcuuBJE3Pjtt-CQWF0vbJqUiK5tufGGE3JX1-~iEKLgAwlS7MN8yDR85iABDYaOgg__&Key-Pair-Id=K269JMAT9ZF4GZ)
 
 [TypeScript Documentation](https://www.typescriptlang.org/docs/)
 
