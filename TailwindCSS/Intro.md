@@ -1,5 +1,6 @@
 ### TailwindCSS: Introduction to Utility-First CSS
 
+![TailwindCSS Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png)
 [TailwindCSS Documentation](https://tailwindcss.com/docs)
 
 ## Index
