@@ -1,6 +1,6 @@
 ### Responsive Design
 
-![TailwindCSS Logo](https://tailwindcss.com/_next/static/media/social-card-large.fcc2850f.jpg)
+![TailwindCSS Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png)
 
 [TailwindCSS Documentation](https://tailwindcss.com/docs)
 
