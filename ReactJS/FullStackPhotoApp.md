@@ -1,5 +1,5 @@
 ### **1. Estructura del Proyecto**
-Vamos a dividir el proyecto en dos grandes carpetas: `frontend` y `backend`.
+Vamos a dividir el proyecto en dos grandes carpetas: `frontend` y `backend` o `client` y `server`.
 
 ```
 my-fullstack-app/
